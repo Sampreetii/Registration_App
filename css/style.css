@@ -1,0 +1,16 @@
+.header{
+    width: 100%;
+    text-align: center;
+}
+.header-title {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: Comic Sans MS;
+    color: #6b4743;
+    text-shadow: -3px 3px 7px #969865;
+}
+.header-icon {
+    height: 5rem;
+    margin-right: 1rem;
+    display: inline;
+}
