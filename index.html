@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <title>Registration Form</title>
+    <title>MSITCE</title>
 </head>
 
 <body>
@@ -58,9 +58,38 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div>
+        <div class="footer">
+            <a class="action-button jump" id="myBtn" onclick="onclickbtn()">
+                <span class="glyphicon glyphicon-info-sign"></span>LOG IN
+            </a>
+        </div>
     </div>
 
 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="onclickclose()">&times;</span>
+                <h2>Login</h2>
+            </div>
+            <div class="modal-body">
+                <p id="username">
+                    <label for="username" class="input-label">Username/Email</label>   
+                    <input type="text" id="username" name="username" class="input-box">
+                </p>
+                <p id="password">
+                    <label for="password" class="input-label">Password</label>   
+                    <input type="password" id="password" name="password" class="input-box">
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a class="action-button reallogin" id="myBtn" href="https://msit.edu.in/" onclick="alert('Logged in successfully! Redirecting to main page...')">LOG IN
+                </a>
+                Not Having an account?  <a href="./pages/registration_form.html">Register Now!</a>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>

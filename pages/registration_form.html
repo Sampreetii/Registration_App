@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Registration Form</title>
+	<title>MSITCE Registration Form</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<link rel="stylesheet" href="../css/registration.css">
@@ -126,6 +126,11 @@
                                 <option value="BCA">BCA</option>					
 							</select>
 						</p>
+                        <p>
+							<label for="passcode">Set Password:</label>
+							<input type="password" id="passcode" name="user_passcode">
+						</p>
+						</p>
                         <div class="declaration">
                             <legend>Declaration</legend>
                             <P>
@@ -144,10 +149,9 @@
 			
 		</main>
         <div class="footer">
-            <a class="action-button submit" href="submit">Sign Up</a>
+            <a class="action-button submit" href="https://msit.edu.in/" onclick="alert('Account Created Successfully! Redirecting to main page...')">Sign Up</a>
             <a class="action-button reset" onclick="reset()">Reset</a>
         </div>
-
 	</div>
 </body>
 </html>
