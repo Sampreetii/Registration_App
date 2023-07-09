@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link rel="stylesheet" href="../css/registration.css">
+    <script type="application/javascript" src="js/registration_form.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img class="header-icon" src="../assets/grad.png"></img>
+        <span class="header-title">MSIT College of Engineering</span>
+    </div>
+	<header>
+		<h2 class="tag-line">REGISTRATION FORM</h2>
+	</header>
+
+	<div class="wrapper">
+		<main>
+            <div class="info">
+				<h2></h2>
+				<p></p>
+			</div>
+			<form action="#" method="GET" id="form">
+				<fieldset class="contact-info">
+					<div class="container">
+						<legend>Personal Information</legend>
+						<p>
+							<label for="name">Full Name</label>   
+							<input type="text" id="name" name="user_name" placeholder="Required" title="Please fill out this field"> 
+						</p>
+						<p>
+							<label for="email">Email Address</label>   
+							<input type="email" id="email" name="user_email" placeholder="Required" title="Please fill out this field"> 
+						</p>
+						<p>
+							<label for="address">Street Adress</label>   
+							<input type="text" id="address" name="user_address">
+						</p>
+                        <p>
+							<label for="dob">Date Of Birth</label>   
+							<input type="date" id="dob" name="user_dob">
+						</p>
+                        <p>
+							<label for="phone_number">Phone Number:</label>   
+							<input type="tel" id="phone_number" name="user_number">
+						</p>
+						<p>
+							<label for="city">City</label>  
+							<input type="text" id="city" name="user_city"> 
+						</p>
+						<p>
+							<label for="state">State</label>
+							<select id="state" name="user_state">
+								<option value="state">Choose State</option>
+								<option value="abc">AP|Andhra Pradesh</option>
+								<option value="def">AR|Arunachal Pradesh</option>
+								<option value="geh">AS|Assam</option>
+								<option value="ijk">BR|Bihar</option>
+								<option value="ftg">CT|Chhattisgarh</option>
+								<option value="hjk">GA|Goa</option>
+								<option value="kil">GJ|Gujarat</option>
+								<option value="tyu">HR|Haryana</option>
+								<option value="ewt">HP|Himachal Pradesh</option>
+								<option value="yrt">DL|Delhi</option>
+								<option value="sef">WB|West Bengal</option>
+							</select>
+						</p>
+						<p>
+							<label for="zipcode">Zipcode</label>
+							<input type="number" id="zipcode" name="user_zipcode">
+						</p>
+                        <p>
+                            <label for="10th_result">10th Marksheet</label>
+							<input type="file" id="10th_marksheet" name="10th_result">
+                        </p>
+                        <p>
+                            <label for="12th_result">12th Marksheet</label>
+							<input type="file" id="12th_marksheet" name="12th_result">
+                        </p>
+					</div>
+				</fieldset>
+
+				<fieldset class="newsletter">
+					<div class="container">
+						<legend>Course Information</legend>
+						<p>Type:</p>
+
+						<div class="radio-btn">
+							<p>
+								<input type="radio" id="Normal" name="type">
+								<label for="normal">Non-lateral</label>
+							</p>
+							<p>
+								<input type="radio" id="Lateral" name="type">
+								<label for="Lateral">Lateral</label>
+							</p>
+						</div>
+
+						<p>TFW Eligible:</p>
+						<div class="checkboxes">
+							<p>
+								<input type="checkbox" id="tfw" value="Yes" name="tfw" onchange="tfwchanged()">
+								<label for="Yes">Yes</label>
+							</p>
+						</div>
+                        <p id="income" hidden="true">
+							<label for="family_income">Family income per annum (INR):</label>   
+							<input type="tel" id="family_income" name="user_number">
+						</p>
+
+						<P>Course:</P>
+						<p>
+							<select>
+								<option value="PickOne">Pick One</option>
+								<option value="CSE">CSE</option>--
+                                <option value="CSE-AIML">CSE-AIML</option>
+								<option value="CSE-DS">CSE-DS</option>
+                                <option value="CSE-Cybersecurity">CSE-Cybersecurity</option>
+								<option value="ECE">ECE</option>
+                                <option value="ME">ME</option>
+								<option value="EE">EE</option>	
+                                <option value="BBA">BBA</option>
+                                <option value="BCA">BCA</option>					
+							</select>
+						</p>
+                        <div class="declaration">
+                            <legend>Declaration</legend>
+                            <P>
+                                <label style="font-size: medium;">
+                                    <input type="checkbox" id="tfw" name="new2" value="Yes">
+                                    <b>Subscribe to newsletter</b>
+                                </label>
+                            </P>
+                            <label style="font-size: medium;">
+                                <input type="checkbox" id="tfw" name="new2" value="Yes">
+                                 <b>Accept <a href="./terms.html">Terms and Conditions</a></b>
+                        </div>
+					</div>
+				</fieldset>
+			</form>
+			
+		</main>
+        <div class="footer">
+            <a class="action-button submit" href="submit">Sign Up</a>
+            <a class="action-button reset" onclick="reset()">Reset</a>
+        </div>
+
+	</div>
+</body>
+</html>
