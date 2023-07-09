@@ -1,16 +1,64 @@
 .header{
     width: 100%;
     text-align: center;
+    background-color: beige;
 }
 .header-title {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 900;
     font-family: Comic Sans MS;
     color: #6b4743;
     text-shadow: -3px 3px 7px #969865;
+    vertical-align: middle;
 }
 .header-icon {
-    height: 5rem;
+    height: 8rem;
     margin-right: 1rem;
     display: inline;
+}
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+
+.item{
+    background: white;    
+    text-align: center;
+    height: 52rem !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel{
+    margin-top: 20px;
+}
+
+.bs-example{
+	margin: 20px;
+}
+
+.carousel.carousel-fade .item {
+  opacity:0;
+  filter: alpha(opacity=0); /* ie fix */
+}
+
+.carousel.carousel-fade .active.item {
+    opacity:1;
+    filter: alpha(opacity=100); /* ie fix */
+}
+
+#car1{
+    background-image: url("../assets/car1.jpg");
+}
+
+#car2{
+    background-image: url("../assets/car2.jpg");
+}
+
+#car3{
+    background-image: url("../assets/car3.jpg");
 }
