@@ -1,5 +1,6 @@
 function reset() {
     document.getElementById("form").reset();
+    document.getElementById("income").hidden = true;
 }
 
 function tfwchanged(){
