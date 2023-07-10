@@ -8,6 +8,7 @@
     <script type="application/javascript" src="js/script.js"></script>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <title>MSITCE</title>
@@ -73,19 +74,22 @@
                 <h2>Login</h2>
             </div>
             <div class="modal-body">
-                <p id="username">
-                    <label for="username" class="input-label">Username/Email</label>   
-                    <input type="text" id="username" name="username" class="input-box">
-                </p>
-                <p id="password">
-                    <label for="password" class="input-label">Password</label>   
-                    <input type="password" id="password" name="password" class="input-box">
-                </p>
+                <form id="loginForm">
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" placeholder="Username or email" name="usrnm">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input class="input-field" type="password" placeholder="Password" name="psw">
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-                <a class="action-button reallogin" id="myBtn" href="https://msit.edu.in/" onclick="alert('Logged in successfully! Redirecting to main page...')">LOG IN
+                <a class="action-button reallogin" id="myBtn" href="https://msit.edu.in/"
+                    onclick="alert('Logged in successfully! Redirecting to main page...')">LOG IN
                 </a>
-                Not Having an account?  <a href="./pages/registration_form.html">Register Now!</a>
+                Not Having an account? <a href="./pages/registration_form.html">Register Now!</a>
             </div>
         </div>
 

@@ -1,5 +1,6 @@
 function onclickbtn() {
     document.getElementById("myModal").style.display = "block";
+    document.getElementById("loginForm").reset();
 }
 
 
